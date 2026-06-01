@@ -415,7 +415,7 @@ body {
 
 .section-title {
   font-size: 3rem;
-  margin-bottom: 4rem;
+  margin-bottom: 40px;
 }
 
 .exp-grid {
@@ -512,7 +512,7 @@ body {
     padding: 0 2rem;
   }
   .section-title {
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
   .case-item {
     flex-direction: column;
