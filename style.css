@@ -511,6 +511,9 @@ body {
   .container {
     padding: 0 2rem;
   }
+  .section-title {
+    margin-bottom: 60px;
+  }
   .case-item {
     flex-direction: column;
     gap: 3rem; 
