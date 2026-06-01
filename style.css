@@ -513,7 +513,8 @@ body {
   }
   .case-item {
     flex-direction: column;
-    gap: 3rem; /* Добавляем отступ между текстом и картинкой */
+    gap: 3rem; 
+    padding: 60px 0; /* Уменьшаем огромные отступы на мобильных */
   }
   .case-visual {
     padding: 0 2rem; /* Одинаковые отступы по бокам */
