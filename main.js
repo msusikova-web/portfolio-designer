@@ -83,28 +83,31 @@ const init = () => {
       ease: "power2.out"
     });
 
-    // Эффект "стопки" (Stacking effect)
+    // Эффект "стопки" (Stacking effect) - только для десктопа
     if (index < cases.length - 1) {
-      ScrollTrigger.create({
-        trigger: caseItem,
-        start: "top top",
-        endTrigger: cases[index + 1], // Указываем следующую карточку как триггер окончания
-        end: "top top",               // Открепляем, когда следующая доехала до верха
-        pin: true,
-        pinSpacing: false,
-        scrub: true,
-      });
-
-      // Анимация уменьшения масштаба при наезде следующей карточки
-      gsap.to(caseItem, {
-        scale: 0.94,
-        ease: "none",
-        scrollTrigger: {
-          trigger: cases[index + 1],
-          start: "top bottom",
+      let mm = gsap.matchMedia();
+      
+      mm.add("(min-width: 1025px)", () => {
+        ScrollTrigger.create({
+          trigger: caseItem,
+          start: "top top",
+          endTrigger: cases[index + 1],
           end: "top top",
+          pin: true,
+          pinSpacing: false,
           scrub: true,
-        }
+        });
+
+        gsap.to(caseItem, {
+          scale: 0.94,
+          ease: "none",
+          scrollTrigger: {
+            trigger: cases[index + 1],
+            start: "top bottom",
+            end: "top top",
+            scrub: true,
+          }
+        });
       });
     }
   });
