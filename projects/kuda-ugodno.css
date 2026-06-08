@@ -1,0 +1,244 @@
+/* Specific styles for Kuda Ugodno Case Study */
+
+.case-study {
+  padding-top: 100px;
+}
+
+.case-hero {
+  padding: 10vh 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.case-hero__meta {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  color: var(--text-dim);
+}
+
+.case-hero__meta strong {
+  color: var(--text-color);
+}
+
+/* Context Section */
+.context-section {
+  padding: 10vh 0;
+}
+
+.context-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.context-card {
+  padding: 3rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.context-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--accent-color);
+}
+
+/* Roles Section (Tabs) */
+.roles-section {
+  padding: 10vh 0;
+  background: rgba(0, 255, 170, 0.02);
+}
+
+.tabs-nav {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 1rem;
+}
+
+.tab-btn {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.tab-btn:hover {
+  color: var(--text-color);
+}
+
+.tab-btn.active {
+  color: var(--accent-color);
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -1rem;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-color);
+  box-shadow: 0 0 10px var(--accent-glow);
+}
+
+.tab-pane {
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.tab-inner h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.tab-inner ul {
+  list-style-type: none;
+}
+
+.tab-inner li {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.tab-inner li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+}
+
+/* UX Grade Section */
+.ux-grade-section {
+  padding: 10vh 0;
+}
+
+.component-demo-wrapper {
+  background: #111;
+  padding: 4rem;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.guest-selector {
+  background: #222;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  position: relative;
+}
+
+.guest-header {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.guest-dropdown {
+  padding: 1.5rem;
+}
+
+.guest-dropdown.hidden {
+  display: none;
+}
+
+.counter-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.counter-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.counter-desc {
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+.counter-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.counter-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: none;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+}
+
+.counter-btn:hover:not(:disabled) {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+.counter-btn:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.counter-value {
+  width: 20px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.error-message {
+  color: #ff4a4a;
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+  min-height: 1rem;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .context-grid {
+    grid-template-columns: 1fr;
+  }
+  .case-hero__meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .tabs-nav {
+    flex-wrap: wrap;
+  }
+}

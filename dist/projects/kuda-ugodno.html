@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кейс: Куда Угодно</title>
+  <!-- Подключаем основные стили портфолио -->
+  <!-- Подключаем специфичные стили для этого кейса -->
+  <script type="module" crossorigin src="/portfolio-designer/assets/kudaUgodno-CFo2TlGo.js"></script>
+  <link rel="modulepreload" crossorigin href="/portfolio-designer/assets/main-DTU804GX.js">
+  <link rel="stylesheet" crossorigin href="/portfolio-designer/assets/main-CN1HfbWr.css">
+  <link rel="stylesheet" crossorigin href="/portfolio-designer/assets/kudaUgodno-ByNjx4Vt.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav">
+      <div class="logo"><a href="../index.html" style="color: inherit; text-decoration: none;">ЕЛЕНА УСИКОВА</a></div>
+      
+      <button class="burger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav__list">
+        <li><a href="../index.html#about">Обо мне</a></li>
+        <li><a href="../index.html#cases">Проекты</a></li>
+        <li><a href="../index.html#experience">Опыт</a></li>
+        <li class="nav__item-desktop"><a href="../index.html#contact">Контакты</a></li>
+        <li class="nav__item-mobile">
+          <div class="nav__mobile-contacts">
+            <a href="mailto:ms.usikova@bk.ru" class="nav__mobile-link">ms.usikova@bk.ru</a>
+            <a href="tel:+79182173426" class="nav__mobile-link">+7 918 217 34 26</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="case-study">
+    <!-- Hero Блок -->
+    <section class="case-hero">
+      <div class="container">
+        <span class="badge">Кейс</span>
+        <h1 class="hero__title">Платформа «КудаУгодно»</h1>
+        <p class="hero__subtitle">B2B2C агрегатор и экосистема для туристического бизнеса. Полный цикл проектирования: от IA до передачи в разработку.</p>
+        <div class="case-hero__meta">
+          <div><strong>Роль:</strong> Lead UX/UI</div>
+          <div><strong>Сроки:</strong> 6 месяцев</div>
+          <div><strong>Платформы:</strong> Web (Desktop + Mobile)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок «Бизнес-контекст» -->
+    <section class="context-section">
+      <div class="container">
+        <h2 class="section-title">Бизнес-контекст</h2>
+        <div class="context-grid">
+          <div class="context-card problem-user">
+            <h3>Проблема пользователя</h3>
+            <p>Туристам сложно найти проверенные авторские туры. Процесс бронирования разрознен, нет единого стандарта доверия и безопасной оплаты.</p>
+          </div>
+          <div class="context-card problem-business">
+            <h3>Проблема бизнеса</h3>
+            <p>Туроператорам и отельерам не хватает удобного инструмента для управления квотами, заявками и финансами в одном окне без огромных комиссий.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Интерактивный блок «Роли в экосистеме» (Табы) -->
+    <section class="roles-section">
+      <div class="container">
+        <h2 class="section-title">Роли в экосистеме</h2>
+        
+        <div class="tabs-container">
+          <div class="tabs-nav">
+            <button class="tab-btn active" data-target="tab-tourist">Турист</button>
+            <button class="tab-btn" data-target="tab-operator">Туроператор</button>
+            <button class="tab-btn" data-target="tab-hotel">Отельер</button>
+          </div>
+          
+          <div class="tabs-content">
+            <div id="tab-tourist" class="tab-pane active">
+              <div class="tab-inner">
+                <h3>Сценарии Туриста</h3>
+                <ul>
+                  <li>Поиск и фильтрация туров по интересам и сложности</li>
+                  <li>Безопасное бронирование и оплата частями</li>
+                  <li>Управление поездками в личном кабинете</li>
+                  <li>Связь с организатором тура напрямую</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div id="tab-operator" class="tab-pane">
+              <div class="tab-inner">
+                <h3>Сценарии Туроператора</h3>
+                <ul>
+                  <li>Создание карточек туров (конструктор лендингов)</li>
+                  <li>Управление заявками и CRM-система</li>
+                  <li>Настройка динамического ценообразования</li>
+                  <li>Аналитика продаж и конверсии</li>
+                </ul>
+              </div>
+            </div>
+            
+            <div id="tab-hotel" class="tab-pane">
+              <div class="tab-inner">
+                <h3>Сценарии Отельера</h3>
+                <ul>
+                  <li>Управление номерным фондом (шахматка)</li>
+                  <li>Синхронизация квот (Channel Manager)</li>
+                  <li>Назначение спецтарифов для туроператоров</li>
+                  <li>Финансовая отчетность</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Интерактивный блок «UX-Грейд» -->
+    <section class="ux-grade-section">
+      <div class="container">
+        <h2 class="section-title">UX-Грейд (Компонент)</h2>
+        <p class="hero__subtitle" style="margin-bottom: 3rem;">Пример живого компонента выбора гостей: логика зависимостей (взрослые/дети) и ограничения системы.</p>
+        
+        <div class="component-demo-wrapper">
+          <div class="guest-selector">
+            <div class="guest-header">
+              <span id="guest-total">2 гостя</span>
+              <button id="toggle-guest-dropdown" class="btn--outline" style="padding: 0.5rem 1rem; border-color: rgba(255,255,255,0.2);">Изменить</button>
+            </div>
+            
+            <div id="guest-dropdown" class="guest-dropdown hidden">
+              <!-- Взрослые -->
+              <div class="counter-row">
+                <div class="counter-info">
+                  <div class="counter-name">Взрослые</div>
+                  <div class="counter-desc">От 12 лет</div>
+                </div>
+                <div class="counter-controls">
+                  <button class="counter-btn minus" data-type="adults">-</button>
+                  <span class="counter-value" id="count-adults">2</span>
+                  <button class="counter-btn plus" data-type="adults">+</button>
+                </div>
+              </div>
+              
+              <!-- Дети -->
+              <div class="counter-row">
+                <div class="counter-info">
+                  <div class="counter-name">Дети</div>
+                  <div class="counter-desc">До 12 лет</div>
+                </div>
+                <div class="counter-controls">
+                  <button class="counter-btn minus" data-type="children">-</button>
+                  <span class="counter-value" id="count-children">0</span>
+                  <button class="counter-btn plus" data-type="children">+</button>
+                </div>
+              </div>
+              
+              <div class="dropdown-footer">
+                <p id="guest-error" class="error-message"></p>
+                <button id="apply-guests" class="btn btn--outline" style="width: 100%; border-color: var(--accent-color);">Применить</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <a href="../index.html" class="btn btn--outline">← Вернуться на главную</a>
+    </div>
+  </footer>
+
+</body>
+</html>
