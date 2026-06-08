@@ -52,6 +52,13 @@
       </div>
     </section>
 
+    <!-- Главный визуал -->
+    <section class="visual-showcase container">
+      <div class="visual-placeholder large" style="background: linear-gradient(135deg, #0a0a0a, #1a1a1a);">
+        <span class="placeholder-text">Здесь будет мокап: Главный экран B2C и дашборд B2B</span>
+      </div>
+    </section>
+
     <!-- Блок «Бизнес-контекст» -->
     <section class="context-section">
       <div class="container">
@@ -121,6 +128,20 @@
             </div>
           </div>
         </div>
+
+        <!-- Интерактивный прототип Figma -->
+        <div class="figma-embed-container">
+          <div class="figma-header">
+            <h3>Интерактивный прототип</h3>
+            <p>Покликайте по интерфейсам туриста и туроператора прямо здесь.</p>
+          </div>
+          <!-- Замените URL в src на вашу ссылку "Embed" из Figma -->
+          <iframe style="border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 20px; width: 100%; height: 700px; background: #000;" 
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F..." 
+            allowfullscreen>
+          </iframe>
+        </div>
+
       </div>
     </section>
 
@@ -173,6 +194,38 @@
         </div>
       </div>
     </section>
+    <!-- Сетка краевых сценариев -->
+    <section class="edge-cases-section">
+      <div class="container">
+        <h2 class="section-title">Адаптив и Edge Cases</h2>
+        <div class="edge-cases-grid">
+          <div class="edge-card">
+            <div class="visual-placeholder" style="height: 300px; background: #1a1a1a;">
+              <span class="placeholder-text">Экран пустой выдачи (ВЖУХ)</span>
+            </div>
+            <h4>Empty States</h4>
+            <p>Проектирование логики для пустой выдачи поиска с объяснением и точками возврата.</p>
+          </div>
+          
+          <div class="edge-card">
+            <div class="visual-placeholder" style="height: 300px; background: #1a1a1a;">
+              <span class="placeholder-text">Мобильная карусель туров</span>
+            </div>
+            <h4>Mobile-first списки</h4>
+            <p>Замена длинных списков карточек на горизонтальные свайп-карусели для экономии места.</p>
+          </div>
+
+          <div class="edge-card" style="grid-column: 1 / -1;">
+            <div class="visual-placeholder" style="height: 400px; background: linear-gradient(to right, #0a0a0a, #1a1a1a);">
+              <span class="placeholder-text">Планшетная сетка каталога отелей</span>
+            </div>
+            <h4>Адаптив для планшетов</h4>
+            <p>Специфичные состояния галереи и каталога для iPad.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer">

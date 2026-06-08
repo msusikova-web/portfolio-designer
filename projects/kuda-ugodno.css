@@ -1,5 +1,78 @@
 /* Specific styles for Kuda Ugodno Case Study */
 
+/* Reusable Visual Placeholders */
+.visual-placeholder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  color: var(--text-dim);
+  font-family: monospace;
+  text-align: center;
+  padding: 2rem;
+}
+
+.visual-showcase {
+  margin-top: -5vh; /* Подтягиваем визуал под хедер */
+  margin-bottom: 5vh;
+}
+
+.visual-placeholder.large {
+  height: 60vh;
+  min-height: 400px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.figma-embed-container {
+  margin-top: 6rem;
+  padding-top: 4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.figma-header {
+  margin-bottom: 2rem;
+}
+
+.figma-header h3 {
+  font-size: 2rem;
+  color: var(--accent-color);
+  margin-bottom: 0.5rem;
+}
+
+.figma-header p {
+  color: var(--text-dim);
+}
+
+/* Edge Cases Section */
+.edge-cases-section {
+  padding: 10vh 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.edge-cases-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.edge-card h4 {
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.edge-card p {
+  color: var(--text-dim);
+  font-size: 0.9rem;
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+  .edge-cases-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .case-study {
   padding-top: 100px;
 }
