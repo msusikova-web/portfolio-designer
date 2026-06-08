@@ -242,3 +242,16 @@
     flex-wrap: wrap;
   }
 }
+
+/* Back Button */
+.btn--muted {
+  display: inline-block;
+  margin-bottom: 2rem;
+  border-color: rgba(255, 255, 255, 0.2);
+  color: var(--text-dim);
+}
+
+.btn--muted:hover {
+  color: var(--bg-color) !important;
+  border-color: var(--accent-color);
+}

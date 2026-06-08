@@ -48,19 +48,7 @@ const init = () => {
     duration: 0.8,
     yPercent: -100,
     ease: "power4.inOut",
-  })
-  .from('.hero__title', {
-    duration: 0.8,
-    y: 50,
-    opacity: 0,
-    ease: "power3.out"
-  }, "<0.2") // Стартует почти одновременно с уходом прелоадера
-  .from('.hero__subtitle', {
-    duration: 0.8,
-    y: 30,
-    opacity: 0,
-    ease: "power3.out"
-  }, "<0.1"); // Стартует сразу за заголовком
+  });
 
   // Stacking Cards Animation
   const cases = document.querySelectorAll('.case-item');
