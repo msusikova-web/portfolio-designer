@@ -18,6 +18,14 @@
   margin-bottom: 5vh;
 }
 
+.hero-showcase-img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+  display: block;
+}
+
 .visual-placeholder.large {
   height: 60vh;
   min-height: 400px;
